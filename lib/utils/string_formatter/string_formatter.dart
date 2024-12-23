@@ -1,9 +1,9 @@
-class StringFormatter {
-  String capitalizeFirstLetter(String text) {
-    return text[0].toUpperCase() + text.substring(1);
+extension StringFormatter on String {
+  String capitalizeFirstLetter() {
+    return this[0].toUpperCase() + this.substring(1);
   }
 
-  String getFirstName(String fullName) {
-    return fullName.split(' ')[0];
+  String getFirstName() {
+    return this.split(' ')[0];
   }
 }
